@@ -78,6 +78,59 @@
  * @since 1.0
  *
  */
+.main_nav {
+  padding: 1em;
+}
+.main_nav__avatar {
+  background: url("../images/avatar.png") no-repeat center/100% auto transparent;
+  display: block;
+  float: left;
+  width: 95px;
+  height: 88px;
+  text-indent: -10000000px;
+}
+.main_nav__list {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  margin-right: 5em;
+  margin-top: 2em;
+}
+.main_nav__item {
+  padding: inherit;
+}
+.main_nav__link {
+  text-decoration: none;
+  color: #0C0910;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  padding-left: 2em;
+}
+.main_nav__icon {
+  text-align: right;
+  width: 100%;
+}
+.main_nav .open {
+  display: block;
+}
+
+@media all and (min-width: 768px) {
+  .main_nav__list {
+    display: block;
+    text-align: right;
+  }
+  .main_nav__icon {
+    display: none;
+  }
+  .main_nav__item {
+    display: inline-block;
+    padding: 0.2em;
+    border-bottom: none;
+  }
+}
 /*
  * 
  * Esta carpeta fue creada para componentes o módulos pequeños como por ejemplo: 
