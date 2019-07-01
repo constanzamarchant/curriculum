@@ -2,24 +2,114 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<title>Curriculum Vitae</title>
 </head>
 <body>
-	<header>
-		<h1 class="main_nav__title"><a class="main_nav__avatar" href="index.html">XDA</a></h1>
+		<header>
+			<nav class="main_nav">
+				<h1 class="avatar"><a href="#">Hola</a></h1>
+				<ul class="main_nav__list">
+					<li class="main_nav__item"><a href="#acerca" class="main_nav__link">Acerca de mi</a></li>
+					<li class="main_nav__item"><a href="#experiencia" class="main_nav__link">Experiencia</a></li>
+					<li class="main_nav__item"><a href="#educacion" class="main_nav__link">Educación</a></li>
+					<li class="main_nav__item"><a href="#habilidades" class="main_nav__link">Habilidades</a></li>
+					<li class="main_nav__item"><a href="#contacto" class="main_nav__link">Contacto</a></li>
+				</ul>
+			</nav>
 
-		<nav class="main_nav">
-			<div class="main_nav__icon"><i class="fas fa-bars"></i></i></div>
-			<ul class="main_nav__list">
-				<li class="main_nav__item"><a href="#" class="main_nav__link">Mujer</a></li>
-				<li class="main_nav__item"><a href="#" class="main_nav__link">Hombre</a></li>
-				<li class="main_nav__item"><a href="#" class="main_nav__link">Accesorios</a></li>
-				<li class="main_nav__item"><a href="#" class="main_nav__link">Blog</a></li>
-			</ul>
-		</nav>
-	</header>
+			<section id="acerca" class="description">
+				<h2 class="description__title">Constanza Marchant</h2>
+				<div class="description__subtitle">Calle siempre viva 1857 | +56 943556243 | <span>lorem@gmail.com</span></div>
+				<p class="description__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rem reprehenderit quas expedita ab fugiat consequatur cumque aspernatur, ipsa voluptatem illum veniam ex placeat laudantium vel! Nesciunt consequatur, sunt exercitationem.</p>
+				<div class="description__rrss">
+					<i class="fab fa-github-square fa-3x"></i>
+					<i class="fab fa-facebook-square fa-3x"></i>
+					<i class="fab fa-twitter-square fa-3x"></i>
+				</div>
+			</section>
+
+
+			<section id="experiencia" class="experiencia">
+				<div class="border"></div>
+				<div class="experiencia__container">
+					<h3 class="experiencia__title">Experiencia</h3>
+					<div class="experiencia__subtitle">Desafío Latam</div>
+					<div class="experiencia__fecha">2017-2018</div>
+					<div class="experiencia__cargo">Front-End Developer</div>
+					<p class="description__text--simple">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi perspiciatis magnam corporis doloremque soluta consequuntur eum earum deserunt placeat deleniti recusandae, veritatis quam obcaecati nam explicabo, voluptatem fugit harum pariatur.</p>
+				</div>
+				
+				<div class="experiencia__container">
+					<div class="experiencia__subtitle">Retailadd</div>
+					<div class="experiencia__fecha">2015-2017</div>
+					<div class="experiencia__cargo">UX-UI Designer</div>
+					<p class="description__text--simple">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi perspiciatis magnam corporis doloremque soluta consequuntur eum earum deserunt placeat deleniti recusandae, veritatis quam obcaecati nam explicabo, voluptatem fugit harum pariatur.</p>
+				</div>
+				
+				<div class="experiencia__container">
+					<div class="experiencia__subtitle">Cafetería Haippe</div>
+					<div class="experiencia__fecha">2013-2015</div>
+					<div class="experiencia__cargo">Barista</div>
+					<p class="description__text--simple">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi perspiciatis magnam corporis doloremque soluta consequuntur eum earum deserunt placeat deleniti recusandae, veritatis quam obcaecati nam explicabo, voluptatem fugit harum pariatur.</p>
+				</div>
+			</section>
+
+			<section id="educacion" class="educacion">
+				<div class="border"></div>
+				<div class="educacion__container">
+					<h3 class="educacion__title">Educación</h3>
+					<div class="educacion__subtitle">Desafío Latam</div>
+					<div class="experiencia__fecha">2017</div>
+					<div class="educacion__cargo">Front-End</div>
+				</div>
+
+				<div class="educacion__container">
+					<div class="educacion__subtitle">UX/UI Online University</div>
+					<div class="experiencia__fecha">2015-2016</div>
+					<div class="educacion__cargo">UX-UI</div>
+				</div>
+
+				<div class="educacion__container">
+					<div class="educacion__subtitle">UDDLA</div>
+					<div class="experiencia__fecha">2010-2015</div>
+					<div class="educacion__cargo">Diseñador Gráfico</div>
+				</div>
+			</section>
+
+			<section id="habilidades" class="habilidades">
+				<div class="border"></div>
+				<div class="habilidades__container">
+					<h3 class="habilidades__title">Habilidades</h3>
+					<div class="habilidades__subtitle">Lenguajes de Programación</div>
+					<div class="habilidades__cargo">Javascript, PHP</div>
+				</div>
+
+				<div class="habilidades__container">
+					<div class="habilidades__subtitle">Herramientas</div>
+					<div class="habilidades__cargo">Wordpress, JQuery, Bootstrap, Photoshop, Sketch, Illustrator</div>
+				</div>
+			</section>
+
+			<section id="contacto" class="contacto">
+				<div class="border"></div>
+				<div class="contacto__container">
+					<h3 class="educacion__title">Contacto</h3>
+					<p class="description__text--simple">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi perspiciatis magnam corporis doloremque soluta consequuntur eum earum deserunt placeat deleniti recusandae.</p>
+
+				<form action="">
+					<p class="description__text--bold">Nombre</p>
+					<input type="text" placeholder="Escribe tu nombre" class="contacto__input">
+					<p class="description__text--bold">Correo</p>
+					<input type="text" placeholder="Escribe tu correo electrónico" class="contacto__input">
+					<p class="description__text--bold">Mensaje</p>
+					 <textarea rows="20" cols="80" placeholder="Escribe tu mensaje" class="contacto__input"></textarea> 
+				</form>
+			</section>
+		</header>
 
 	<script src="assets/js/lib/jquery-3.1.0.min.js"></script>
 	<script src="assets/js/functions.js"></script>

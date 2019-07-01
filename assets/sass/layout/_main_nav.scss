@@ -1,65 +1,232 @@
-.main_nav {
-	padding: 1em;
+header{
+	width: 100%;
+	display: grid;
+	grid-template-columns: .5fr 1fr;
+}
 
-	&__avatar {
-		background: url('../images/avatar.png') no-repeat center / 100% auto transparent;
-		display: block;
-		float: left;
-		width: 95px;
-		height: 88px;
-		text-indent: -10000000px;
+.main_nav{
+	background-color: $mint;
+	padding: 13.5rem 2rem;
+	position: fixed;
+
+
+	&__list{
+		list-style-type: none;
+		font-family: 'lato',sans-serif;
 	}
 
-	&__list {
-		display: none;
-		list-style: none;
-		padding: 0;
-		margin: 0;
+	&__item{
+		padding-top: 1em;
 		text-align: center;
-		margin-right: 5em;
-		margin-top: 2em;
+		text-transform: uppercase;
+		font-weight: bold;
 	}
 
-	&__item {
-		padding: inherit;
-	}
-
-	&__link {
-		text-decoration: none;
-		color: $smoky-black;
-		font-family: $raleway;
-		font-weight: $bold;
-		font-size:$x-large;
-		padding-left:2em;
-	}
-
-	&__icon {
-		text-align: right;
-		width: 100%;
-	}
-
-	.open {
-		display: block;
+	h1.avatar{
+	width: 150px;
+	height: 150px;
+	background: url("../images/avatar.png");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+	border-radius: 50%;
 	}
 }
 
-@media all and (min-width: 768px) {
-	
-	.main_nav {
+.description{
+	grid-column-start: 2;
+	margin-left: 7rem;
+	margin-top: 16rem;
+	color: $gray-blue;
 
-		&__list {
-			display: block;
-			text-align: right;
-		}
-		
-		&__icon {
-			display: none;
-		}
+	&__title{
+		text-transform:uppercase;
+		font-weight: $black;
+		font-size: 3.5em;
+		line-height: 0px;
+	}
 
-		&__item {
-			display: inline-block;
-			padding: .2em;
-			border-bottom: none;
+	&__subtitle{
+		text-transform:uppercase;
+		font-size: 1.5em;
+		font-weight: $light;
+		line-height: 5px;
+
+		span{
+			color: $blacky;
+			text-transform: none;
+			font-weight: $regular;
 		}
 	}
+
+	&__text{
+		margin-top: 5rem;
+		line-height: 1.8em;
+		font-weight: $light;
+		font-size: 1.2em;
+
+		&--simple{
+		margin-top: 1rem;
+		line-height: 1.8em;
+		font-weight: $light;
+		font-size: 1.2em;
+		}
+
+		&--bold{
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		line-height: 1.8em;
+		font-weight: $regular;
+		font-size: 1.2em;
+		}
+	}
+
+	i{
+		margin-left:.8rem;
+		margin-bottom: 5rem;
+	}
+}
+
+.experiencia{
+	grid-column-start: 2;
+	margin-left: 7rem;
+	color: $gray-blue;
+
+	&__container{
+		display: grid;
+	}
+
+	&__title{
+		text-transform:uppercase;
+		font-weight: $black;
+		font-size: 3em;
+		line-height: 0px;
+		margin-top: 5rem;
+	}
+
+	&__subtitle{
+		display: inline-block;
+		text-transform:uppercase;
+		font-size: 1.8em;
+		font-weight: $bold;
+		margin-top: 5rem;
+	}
+
+	&__cargo{
+		font-size: 1.3em;
+		color: grey;
+		margin-bottom:3rem;
+	}
+
+	&__fecha{
+		display: inline-block;
+		justify-self:end;
+		font-size: 1.3em;
+		color: grey;
+	}
+}
+
+.educacion{
+	grid-column-start: 2;
+	margin-left: 7rem;
+	color: $gray-blue;
+
+	&__container{
+		display: grid;
+	}
+
+	&__title{
+		text-transform:uppercase;
+		font-weight: $black;
+		font-size: 3em;
+		margin-top: 5rem;
+	}
+
+	&__subtitle{
+		display: inline-block;
+		text-transform:uppercase;
+		font-size: 1.8em;
+		line-height: 0px;
+		font-weight: $bold;
+		margin-top: 5rem;
+	}
+
+	&__cargo{
+		font-size: 1.3em;
+		color: grey;
+		font-weight: $light;
+	}
+
+	&__fecha{
+		display: inline-block;
+		justify-self:end;
+		font-size: 1.3em;
+		color: grey;
+	}
+}
+
+
+.habilidades{
+	grid-column-start: 2;
+	margin-left: 7rem;
+	color: $gray-blue;
+
+	&__container{
+		display: grid;
+	}
+
+	&__title{
+		text-transform:uppercase;
+		font-weight: $black;
+		font-size: 3em;
+		margin-top: 5rem;
+	}
+
+	&__subtitle{
+		display: inline-block;
+		text-transform:uppercase;
+		font-size: 1.8em;
+		font-weight: $bold;
+		margin-top: 5rem;
+	}
+
+	&__cargo{
+		font-size: 1.3em;
+		color: grey;
+		font-weight: $light;
+	}
+
+	&__fecha{
+		display: inline-block;
+		justify-self:end;
+		font-size: 1.3em;
+		color: grey;
+	}
+}
+
+.contacto{
+	grid-column-start: 2;
+	margin-left: 7rem;
+	color: $gray-blue;
+
+	&__input{
+		font-family: 'lato',sans-serif;
+		width: 600px;
+		padding: .5rem 1rem;
+		margin-top:1.5rem;
+		margin-bottom:1.5rem;
+		font-size: 1em;
+		font-weight:$light;
+		border-radius: 3px;
+		border:.5px solid silver;
+
+	}
+}
+
+.border{
+	width: 850px;
+	border-bottom: .5px solid $gray-blue;
+	margin-bottom: 4rem;
+	margin-top: 4rem;
 }

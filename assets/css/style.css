@@ -63,6 +63,26 @@
  * @since 1.0
  *
  */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "lato", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: #2d3047;
+  text-decoration: none;
+}
+
+li, ul {
+  margin: 0;
+  padding: 0;
+}
+
 /*
  *
  * Esta carpeta contiene todo lo que hace relación con el sitio web o la aplicación.
@@ -78,59 +98,210 @@
  * @since 1.0
  *
  */
-.main_nav {
-  padding: 1em;
-}
-.main_nav__avatar {
-  background: url("../images/avatar.png") no-repeat center/100% auto transparent;
-  display: block;
-  float: left;
-  width: 95px;
-  height: 88px;
-  text-indent: -10000000px;
-}
-.main_nav__list {
-  display: none;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  margin-right: 5em;
-  margin-top: 2em;
-}
-.main_nav__item {
-  padding: inherit;
-}
-.main_nav__link {
-  text-decoration: none;
-  color: #0C0910;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  padding-left: 2em;
-}
-.main_nav__icon {
-  text-align: right;
+header {
   width: 100%;
-}
-.main_nav .open {
-  display: block;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
 }
 
-@media all and (min-width: 768px) {
-  .main_nav__list {
-    display: block;
-    text-align: right;
-  }
-  .main_nav__icon {
-    display: none;
-  }
-  .main_nav__item {
-    display: inline-block;
-    padding: 0.2em;
-    border-bottom: none;
-  }
+.main_nav {
+  background-color: #7CEA9C;
+  padding: 13.5rem 2rem;
+  position: fixed;
 }
+.main_nav__list {
+  list-style-type: none;
+  font-family: "lato", sans-serif;
+}
+.main_nav__item {
+  padding-top: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.main_nav h1.avatar {
+  width: 150px;
+  height: 150px;
+  background: url("../images/avatar.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  border-radius: 50%;
+}
+
+.description {
+  grid-column-start: 2;
+  margin-left: 7rem;
+  margin-top: 16rem;
+  color: #2D3047;
+}
+.description__title {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 3.5em;
+  line-height: 0px;
+}
+.description__subtitle {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: 300;
+  line-height: 5px;
+}
+.description__subtitle span {
+  color: #071013;
+  text-transform: none;
+  font-weight: 400;
+}
+.description__text {
+  margin-top: 5rem;
+  line-height: 1.8em;
+  font-weight: 300;
+  font-size: 1.2em;
+}
+.description__text--simple {
+  margin-top: 1rem;
+  line-height: 1.8em;
+  font-weight: 300;
+  font-size: 1.2em;
+}
+.description__text--bold {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.8em;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+.description i {
+  margin-left: 0.8rem;
+  margin-bottom: 5rem;
+}
+
+.experiencia {
+  grid-column-start: 2;
+  margin-left: 7rem;
+  color: #2D3047;
+}
+.experiencia__container {
+  display: grid;
+}
+.experiencia__title {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 3em;
+  line-height: 0px;
+  margin-top: 5rem;
+}
+.experiencia__subtitle {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1.8em;
+  font-weight: 700;
+  margin-top: 5rem;
+}
+.experiencia__cargo {
+  font-size: 1.3em;
+  color: grey;
+  margin-bottom: 3rem;
+}
+.experiencia__fecha {
+  display: inline-block;
+  justify-self: end;
+  font-size: 1.3em;
+  color: grey;
+}
+
+.educacion {
+  grid-column-start: 2;
+  margin-left: 7rem;
+  color: #2D3047;
+}
+.educacion__container {
+  display: grid;
+}
+.educacion__title {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 3em;
+  margin-top: 5rem;
+}
+.educacion__subtitle {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1.8em;
+  line-height: 0px;
+  font-weight: 700;
+  margin-top: 5rem;
+}
+.educacion__cargo {
+  font-size: 1.3em;
+  color: grey;
+  font-weight: 300;
+}
+.educacion__fecha {
+  display: inline-block;
+  justify-self: end;
+  font-size: 1.3em;
+  color: grey;
+}
+
+.habilidades {
+  grid-column-start: 2;
+  margin-left: 7rem;
+  color: #2D3047;
+}
+.habilidades__container {
+  display: grid;
+}
+.habilidades__title {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 3em;
+  margin-top: 5rem;
+}
+.habilidades__subtitle {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1.8em;
+  font-weight: 700;
+  margin-top: 5rem;
+}
+.habilidades__cargo {
+  font-size: 1.3em;
+  color: grey;
+  font-weight: 300;
+}
+.habilidades__fecha {
+  display: inline-block;
+  justify-self: end;
+  font-size: 1.3em;
+  color: grey;
+}
+
+.contacto {
+  grid-column-start: 2;
+  margin-left: 7rem;
+  color: #2D3047;
+}
+.contacto__input {
+  font-family: "lato", sans-serif;
+  width: 600px;
+  padding: 0.5rem 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1em;
+  font-weight: 300;
+  border-radius: 3px;
+  border: 0.5px solid silver;
+}
+
+.border {
+  width: 850px;
+  border-bottom: 0.5px solid #2D3047;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+}
+
 /*
  * 
  * Esta carpeta fue creada para componentes o módulos pequeños como por ejemplo: 
